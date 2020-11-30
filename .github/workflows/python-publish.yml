@@ -16,6 +16,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - uses: actions/checkout@v2
       - uses: Gr1N/setup-poetry@v2
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - run: |
           ls
           poetry run pip install --upgrade pip
