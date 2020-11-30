@@ -22,4 +22,5 @@ jobs:
           ls
           poetry run pip install --upgrade pip
           poetry install
-          poetry publish --build
+          poetry build
+          poetry publish
