@@ -20,7 +20,8 @@ jobs:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - run: |
           ls
+          echo "Publishing to PyPi, using username: $PYPI_USERNAME"
           poetry run pip install --upgrade pip
           poetry install
           poetry build
-          poetry publish
+          poetry publish -u $PYPI_USERNAME -p $PYPI_PASSWORD
