@@ -7,6 +7,7 @@ authors = ["daanklijn <daanklijn0@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 mido = "^1.2.9"
+pytest = "^6.1.2"
 
 [tool.poetry.dev-dependencies]
 
